@@ -17,7 +17,6 @@ function makeCircle() {
     var circle = document.getElementById("circle");
     var top = Math.random() * (game.offsetHeight - circle.offsetHeight);
     var left = Math.random() * (game.offsetWidth - circle.offsetWidth);
-    console.log(game.offsetWidth);
     circle.style.top = top + "px";
     circle.style.left = left + "px";
 }
