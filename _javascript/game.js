@@ -5,6 +5,7 @@ function start() {
     document.getElementById("info").style.display = "flex";
     document.getElementById("scoreNumber").innerHTML = 0;
     document.getElementById("timeNumber").innerHTML = TIMER;
+    document.getElementById("game").style.borderRadius = "0 0 10px 10px";
     var circle = document.getElementById("circle");
     circle.style.display = "inline";
     document.getElementById("game").style.paddingLeft = circle.offsetWidth + "px";
