@@ -27,6 +27,7 @@ body, html {
     height: 50px;
     background-color: red;
     border-radius: 50%;
+    display: none;
 }
 
 @media (max-width: 576px) {

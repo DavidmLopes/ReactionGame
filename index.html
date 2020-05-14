@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="_css/bootstrap.css"/>
     <link rel="stylesheet" type="text/css" href="_css/style.css"/>
 </head>
-<body class="d-flex flex-column">
+<body class="d-flex flex-column" onresize="makeCircle()">
     <header class="row justify-content-center py-3">
         <h1>REACTION GAME</h1>
     </header>
@@ -26,10 +26,10 @@
         </div>
     </div>
     <div id="game" class="row flex-grow-1">
-        <button id="startButton" type="button" class="btn btn-outline-dark mx-auto my-auto" onclick="start()" style="display: none;">
+        <button id="startButton" type="button" class="btn btn-outline-dark mx-auto my-auto" onclick="start()">
             <b>START</b>
         </button>
-        <div id="circle" style="top:500px"></div>
+        <div id="circle"></div>
         <script src="_javascript/game.js"></script>
     </div>
     <footer class="row justify-content-center py-3">

@@ -8,18 +8,18 @@ function start() {
     document.getElementById("game").style.borderRadius = "0 0 10px 10px";
     var circle = document.getElementById("circle");
     circle.style.display = "inline";
-    document.getElementById("game").style.paddingLeft = circle.offsetWidth + "px";
-    document.getElementById("game").style.paddingTop = circle.offsetHeight + "px";
     makeCircle();
     timer();
 }
 
 function makeCircle() {
+    var game = document.getElementById("game");
     var circle = document.getElementById("circle");
-    var top = Math.random() * 100;
-    var left = Math.random() * 100;
-    circle.style.top = "calc(" + top + "% - " + circle.offsetHeight + "px)";
-    circle.style.left = "calc(" + left + "% - " + circle.offsetWidth + "px)";
+    var top = Math.random() * (game.offsetHeight - circle.offsetHeight);
+    var left = Math.random() * (game.offsetWidth - circle.offsetWidth);
+    console.log(game.offsetWidth);
+    circle.style.top = top + "px";
+    circle.style.left = left + "px";
 }
 
 document.getElementById("circle").onclick = function() {
@@ -45,6 +45,4 @@ function timer(){
 function endGame() {
     document.getElementById("circle").style.display = "none";
     document.getElementById("startButton").style.display = "inline-block";
-    document.getElementById("game").style.paddingLeft = "0px";
-    document.getElementById("game").style.paddingTop = "0px";
 }
