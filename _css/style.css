@@ -2,10 +2,11 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+    background-color: lightgray;
 }
 
 #game {
-    background-color: lightgray;
+    background-color: white;
     margin-left: 5%;
     margin-right: 5%;
     border-radius: 10px;
